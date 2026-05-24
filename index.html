@@ -33,11 +33,12 @@
     ],
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Boston",
+      "addressLocality": "Georgetown",
       "addressRegion": "MA",
       "addressCountry": "US"
     },
-    "email": "hello@matthewcrist.com"
+    "email": "matt@wearerudder.com",
+    "telephone": "+1-857-225-2197"
   }
   </script>
 
@@ -70,9 +71,9 @@
 
     <!-- Hero -->
     <header class="mb-16">
-      <h1 class="text-4xl md:text-5xl font-medium tracking-tight mb-4">Matt Crist</h1>
-      <p class="text-xl md:text-2xl leading-relaxed text-stone-600">
-        Founder of <a href="https://hondo.xyz" class="link-underline">Hondo</a>.
+      <h1 class="text-4xl md:text-5xl font-medium tracking-tight mb-4">Matthew Crist</h1>
+      <p class="text-stone-500 text-sm mb-6">Principal Engineer &middot; Founder &middot; Georgetown, MA</p>
+      <p class="text-xl md:text-2xl leading-relaxed text-stone-700">
         I build defensible, agentic SaaS through <a href="https://turbopuffin.com" class="link-underline">Turbo Puffin</a>
         and lead engineering teams as a fractional CTO via <a href="https://wearerudder.com" class="link-underline">Rudder</a>.
       </p>
@@ -100,24 +101,116 @@
     <!-- Experience -->
     <section class="mb-16">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">Experience</h2>
-      <p class="text-sm text-stone-500 italic mb-4">
-        Full resume coming &mdash; placeholder while Matt feeds me the bullets.
-        Roles, dates, and one-line outcomes will land here.
+
+      <p class="text-stone-700 leading-relaxed mb-8">
+        Principal engineer / founder with 14+ years across public sector, education, retail, and SaaS.
+        Built and shipped on Drupal, Rails, React, Vue, and (most recently) agent-driven LLM systems.
+        Best at turning a tangled legacy stack into something small enough to operate solo &mdash;
+        and shipping the new thing in months, not quarters.
       </p>
-      <ul class="space-y-5">
+
+      <ul class="space-y-8">
+
+        <!-- Turbo Puffin / Hondo — current -->
         <li>
-          <div class="flex items-baseline justify-between gap-4">
-            <span class="font-medium text-stone-900">Founder &middot; Turbo Puffin / Hondo</span>
+          <div class="flex items-baseline justify-between gap-4 flex-wrap">
+            <span class="font-medium text-stone-900">Founder &middot; Turbo Puffin (operating arm of Hondo, Inc)</span>
             <span class="text-sm text-stone-500 mono whitespace-nowrap">2024 &mdash; present</span>
           </div>
           <p class="text-sm text-stone-600 mt-1 leading-relaxed">
-            Building Helm and Measure. Operating an agent-staffed product org for the company.
+            Building defensible SaaS through a small agent-staffed product org. Two products live:
+          </p>
+          <ul class="mt-2 ml-4 list-disc text-sm text-stone-600 space-y-1 marker:text-stone-400">
+            <li><strong>Helm</strong> &mdash; MCA-defense tool for small business owners. Reconciles bank debits against the funding agreement, generates monthly reconciliation letters, and sells dispute-letter add-ons. Rails 8 + Postgres + Teller + Stripe + LLM contract extraction.</li>
+            <li><strong>Measure</strong> &mdash; privacy-first web analytics with an MCP server so agents can read site traffic directly. Astro marketing site, Rails app, live customers.</li>
+          </ul>
+          <p class="text-sm text-stone-600 mt-2 leading-relaxed">
+            Run the company with an 8-agent in-house org (product owner, tech architect, support, designer, sales,
+            marketing, finance, ops) that I provisioned, charter'd, and operate as observer-in-chief.
           </p>
         </li>
-        <li class="text-sm text-stone-500 italic">
-          [&hellip;previous roles to be filled in]
+
+        <!-- Rudder — overlapping consulting work -->
+        <li>
+          <div class="flex items-baseline justify-between gap-4 flex-wrap">
+            <span class="font-medium text-stone-900">Founder &amp; Principal Consultant &middot; Rudder, LLC</span>
+            <span class="text-sm text-stone-500 mono whitespace-nowrap">Nov 2017 &mdash; present</span>
+          </div>
+          <p class="text-sm text-stone-600 mt-1 leading-relaxed">
+            Independent digital consultancy. Selected engagements:
+          </p>
+          <ul class="mt-2 ml-4 list-disc text-sm text-stone-600 space-y-2 marker:text-stone-400">
+            <li>
+              <strong>Metropolitan Transportation Authority (MTA)</strong> &mdash; Led Drupal 8 &rarr; 9 migrations for MTA.info
+              and the real-time countdown-clock systems. Architected a React-based subway map with real-time train
+              locations and service alerts. Built a Rails + Stimulus ride-matching platform for essential workers.
+            </li>
+            <li>
+              <strong>Marin County, California</strong> &mdash; Rebuilt the County's Drupal architecture and launched 15
+              departmental websites on a single scalable content model + component library. Ongoing support via
+              Helm, Rudder's subscription offering.
+            </li>
+            <li>
+              <strong>Berklee College of Music</strong> &mdash; Designed and launched summer.berklee.edu (Drupal) and
+              re-architected online.berklee.edu/takenote (WordPress). Unified visual identity across multiple sites
+              for easier updates and editor experience.
+            </li>
+            <li>
+              <strong>Sam's Club / Figg / AAA</strong> &mdash; Built a Vue 3 cashback platform for Sam's Club. Designed and
+              delivered the white-label architecture for partner brands. Owned technical architecture and frontend.
+            </li>
+            <li>
+              <strong>MyDocs</strong> &mdash; Led branding, UX design, and marketing for the MyDocs identity-vault platform
+              across six design sprints.
+            </li>
+            <li>
+              <strong>Holy Cross</strong> &mdash; Drupal maintenance + architecture guidance.
+            </li>
+          </ul>
         </li>
+
+        <!-- City of Boston -->
+        <li>
+          <div class="flex items-baseline justify-between gap-4 flex-wrap">
+            <span class="font-medium text-stone-900">Senior Web Developer &middot; City of Boston</span>
+            <span class="text-sm text-stone-500 mono whitespace-nowrap">Mar 2016 &mdash; Nov 2017</span>
+          </div>
+          <p class="text-sm text-stone-600 mt-1 leading-relaxed">
+            First hire on the reformed digital team. Responsible for team-building and day-to-day development.
+          </p>
+          <ul class="mt-2 ml-4 list-disc text-sm text-stone-600 space-y-1 marker:text-stone-400">
+            <li>Led the redesign of <strong>Boston.gov</strong> on Drupal 7.</li>
+            <li>Built a Gatsby-powered microsite for Boston's Amazon HQ2 bid.</li>
+            <li>Developed a React-based public-meeting signage system; helped reshape compliance workflows.</li>
+            <li>Created <strong>Fleet</strong>, Boston's official design system on Fractal.</li>
+          </ul>
+        </li>
+
       </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-16">
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">Stack</h2>
+      <dl class="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-6 gap-y-3 text-sm">
+        <dt class="font-medium text-stone-900">Backend</dt>
+        <dd class="text-stone-700">Ruby on Rails, Drupal (7/8/9/10/11), PHP, Postgres, Sidekiq/Solid Queue</dd>
+
+        <dt class="font-medium text-stone-900">Frontend</dt>
+        <dd class="text-stone-700">React, Vue, Astro, Stimulus, Hotwire/Turbo, Tailwind CSS, vanilla JS</dd>
+
+        <dt class="font-medium text-stone-900">Agents &amp; LLM</dt>
+        <dd class="text-stone-700">Claude Code orchestration, MCP servers, Anthropic / OpenAI APIs, agent-org design</dd>
+
+        <dt class="font-medium text-stone-900">Payments &amp; data</dt>
+        <dd class="text-stone-700">Stripe (subscriptions + lifetime + Tax), Teller bank-connect, financial reconciliation, MCA workflows</dd>
+
+        <dt class="font-medium text-stone-900">Infra &amp; ops</dt>
+        <dd class="text-stone-700">Railway, Hetzner, AWS, Bunny CDN/DNS/Storage, Caddy, sops + age, Terraform</dd>
+
+        <dt class="font-medium text-stone-900">Tools</dt>
+        <dd class="text-stone-700">Figma, GitHub Actions, Linear, Better Stack, DDEV, Pantheon, Acquia</dd>
+      </dl>
     </section>
 
     <!-- Work with me -->
@@ -152,7 +245,8 @@
     <section class="mb-16">
       <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500 mb-4">Contact</h2>
       <ul class="space-y-2 text-stone-800">
-        <li>Email: <a href="mailto:hello@matthewcrist.com" class="link-underline">hello@matthewcrist.com</a></li>
+        <li>Email: <a href="mailto:matt@wearerudder.com" class="link-underline">matt@wearerudder.com</a></li>
+        <li>Phone: <a href="tel:+18572252197" class="link-underline">857-225-2197</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/matthew-crist-78b31b3b5" class="link-underline">matthew-crist</a></li>
         <li>GitHub: <a href="https://github.com/rudder-mc" class="link-underline">rudder-mc</a></li>
       </ul>
