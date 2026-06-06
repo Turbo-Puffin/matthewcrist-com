@@ -1,75 +1,7 @@
 ---
-import '../styles/tokens.css';
-import '../styles/styles.css';
-import '../styles/home.css';
+import Base from '../layouts/Base.astro';
 ---
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Matthew Crist — Make room for what matters</title>
-<meta name="description" content="Matthew Crist writes and talks about living with less and finding peace — the constraint that quietly becomes an advantage. Author of Constraint Advantage, host of The Lag." />
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#2a2722" media="(prefers-color-scheme: dark)" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Matthew Crist" />
-<meta property="og:title" content="Matthew Crist — Make room for what matters" />
-<meta property="og:description" content="Living with less and finding peace — the constraint that quietly becomes an advantage." />
-<meta property="og:url" content="https://matthewcrist.com" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Matthew Crist — Make room for what matters" />
-<meta name="twitter:description" content="Living with less and finding peace — the constraint that quietly becomes an advantage." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-<script is:inline>
-  /* Set theme before paint — saved choice wins, else follow the OS. */
-  (function () {
-    try {
-      var saved = localStorage.getItem('mc-theme');
-      var sysDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.setAttribute('data-theme', saved || (sysDark ? 'dark' : 'light'));
-    } catch (e) {}
-  })();
-</script>
-</head>
-<body class="home">
-
-<input class="site-menu-toggle" type="checkbox" id="site-menu" aria-label="Toggle menu" />
-
-<!-- ── Sticky top bar ──────────────────────────────────────────────────── -->
-<header class="topbar">
-  <div class="wrap topbar-in">
-    <a class="wordmark" href="#top">Matthew Crist</a>
-    <div class="bar-right">
-      <nav class="topnav">
-        <a href="#writing">Writing</a>
-        <a href="#listen">The Lag</a>
-        <a href="#work">Uncluttah</a>
-        <a href="#book">The Book</a>
-        <a href="#about">About</a>
-        <a class="btn btn-primary btn-sm nav-cta" href="#subscribe">Subscribe</a>
-      </nav>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle light / dark">
-        <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"></path></svg>
-        <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
-      </button>
-      <label class="site-burger" for="site-menu" aria-label="Open menu"><span></span><span></span><span></span></label>
-    </div>
-  </div>
-</header>
-<div class="site-drawer">
-  <nav>
-    <a href="#writing">Writing</a>
-    <a href="#listen">The Lag</a>
-    <a href="#work">Uncluttah</a>
-    <a href="#book">The Book</a>
-    <a href="#about">About</a>
-    <div class="drawer-cta"><a class="btn btn-primary" style="width:100%;justify-content:center" href="#subscribe">Subscribe</a></div>
-  </nav>
-</div>
+<Base title="Matthew Crist — Make room for what matters" bodyClass="home">
 
 <main id="top">
 
@@ -80,7 +12,7 @@ import '../styles/home.css';
         <p class="kick">Writer · Host · Declutterer</p>
         <h1>Make room for <em>what matters.</em></h1>
         <p class="lead">I write and talk about living with less and seeking out peace — the constraint that quietly turns into an advantage. Fewer things, clearer days, better work.</p>
-        <a class="hero-altlink" href="#writing">Or read the essays →</a>
+        <a class="hero-altlink" href="/essays">Or read the essays →</a>
       </div>
       <aside class="hero-signup card">
         <div class="hs-copy">
@@ -162,23 +94,23 @@ import '../styles/home.css';
           <h2>Recent essays</h2>
         </div>
         <div class="rows">
-          <a class="row-item" href="#writing">
+          <a class="row-item" href="/essays/the-room-you-leave-empty">
             <span class="row-meta">May 18<br />Essay</span>
             <span class="row-main"><span class="row-title">The room you leave empty</span><span class="row-desc">Why the best shelf in the house is the one with nothing on it.</span></span>
             <span class="row-arrow">→</span>
           </a>
-          <a class="row-item" href="#writing">
+          <a class="row-item" href="/essays/taking-your-time-on-purpose">
             <span class="row-meta">May 04<br />Essay</span>
             <span class="row-main"><span class="row-title">Taking your time on purpose</span><span class="row-desc">Slowness is a skill worth practicing, not a setback to fix.</span></span>
             <span class="row-arrow">→</span>
           </a>
-          <a class="row-item" href="#writing">
+          <a class="row-item" href="/essays/constraint-is-a-kind-of-care">
             <span class="row-meta">Apr 21<br />Essay</span>
             <span class="row-main"><span class="row-title">Constraint is a kind of care</span><span class="row-desc">Limits aren't punishment. They're how you decide what matters.</span></span>
             <span class="row-arrow">→</span>
           </a>
         </div>
-        <a class="more" href="#writing" style="display:inline-block;margin-top:24px">All essays →</a>
+        <a class="more" href="/essays" style="display:inline-block;margin-top:24px">All essays →</a>
       </div>
 
       <div id="listen">
@@ -258,69 +190,4 @@ import '../styles/home.css';
 
 </main>
 
-<!-- ── Footer ──────────────────────────────────────────────────────────── -->
-<footer class="home-footer">
-  <div class="wrap">
-    <div class="cols">
-      <div class="brandcol">
-        <a class="wordmark" href="#top">Matthew Crist</a>
-        <p>Making room for what matters — one fewer thing at a time.</p>
-      </div>
-      <div>
-        <h4>Read</h4>
-        <ul>
-          <li><a href="#writing">Essays</a></li>
-          <li><a href="#book">The book</a></li>
-          <li><a href="#subscribe">Newsletter</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Listen &amp; do</h4>
-        <ul>
-          <li><a href="#listen">The Lag</a></li>
-          <li><a href="#work">Uncluttah</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Elsewhere</h4>
-        <ul>
-          <li><a href="#about">X</a></li>
-          <li><a href="#about">Instagram</a></li>
-          <li><a href="#about">Email</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="base">
-      <span>© 2026 Matthew Crist</span>
-      <span class="mono">Made with room to breathe</span>
-    </div>
-  </div>
-</footer>
-
-<script is:inline>
-  /* Light / dark toggle — persists the user's choice; follows the OS until they choose. */
-  (function () {
-    var root = document.documentElement;
-    var btn = document.getElementById('theme-toggle');
-    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
-    function set(theme, save) {
-      root.classList.add('theme-swapping');
-      root.setAttribute('data-theme', theme);
-      void root.offsetWidth; /* force reflow so colors repaint without transition */
-      requestAnimationFrame(function () { root.classList.remove('theme-swapping'); });
-      if (save) { try { localStorage.setItem('mc-theme', theme); } catch (e) {} }
-      if (btn) btn.setAttribute('aria-pressed', theme === 'dark');
-    }
-    if (btn) btn.addEventListener('click', function () {
-      set(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark', true);
-    });
-    /* If the user hasn't chosen, keep following the OS live. */
-    if (mq) mq.addEventListener('change', function (e) {
-      try { if (localStorage.getItem('mc-theme')) return; } catch (err) {}
-      set(e.matches ? 'dark' : 'light', false);
-    });
-  })();
-</script>
-</body>
-</html>
+</Base>
