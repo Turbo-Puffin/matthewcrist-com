@@ -1,0 +1,317 @@
+---
+import '../styles/tokens.css';
+import '../styles/styles.css';
+import '../styles/home.css';
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Matthew Crist — Make room for what matters</title>
+<meta name="description" content="Matthew Crist writes and talks about living with less and finding peace — the constraint that quietly becomes an advantage. Author of Constraint Advantage, host of The Lag." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script is:inline>
+  /* Set theme before paint — saved choice wins, else follow the OS. */
+  (function () {
+    try {
+      var saved = localStorage.getItem('mc-theme');
+      var sysDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (sysDark ? 'dark' : 'light'));
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="home">
+
+<input class="site-menu-toggle" type="checkbox" id="site-menu" aria-label="Toggle menu" />
+
+<!-- ── Sticky top bar ──────────────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="wordmark" href="#top">Matthew Crist</a>
+    <div class="bar-right">
+      <nav class="topnav">
+        <a href="#writing">Writing</a>
+        <a href="#listen">The Lag</a>
+        <a href="#work">Uncluttah</a>
+        <a href="#book">The Book</a>
+        <a href="#about">About</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="#subscribe">Subscribe</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle light / dark">
+        <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"></path></svg>
+        <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+      </button>
+      <label class="site-burger" for="site-menu" aria-label="Open menu"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+<div class="site-drawer">
+  <nav>
+    <a href="#writing">Writing</a>
+    <a href="#listen">The Lag</a>
+    <a href="#work">Uncluttah</a>
+    <a href="#book">The Book</a>
+    <a href="#about">About</a>
+    <div class="drawer-cta"><a class="btn btn-primary" style="width:100%;justify-content:center" href="#subscribe">Subscribe</a></div>
+  </nav>
+</div>
+
+<main id="top">
+
+  <!-- ── Hero ──────────────────────────────────────────────────────────── -->
+  <div class="wrap home-hero">
+    <div class="inner">
+      <div class="hero-text">
+        <p class="kick">Writer · Host · Declutterer</p>
+        <h1>Make room for <em>what matters.</em></h1>
+        <p class="lead">I write and talk about living with less and seeking out peace — the constraint that quietly turns into an advantage. Fewer things, clearer days, better work.</p>
+        <a class="hero-altlink" href="#writing">Or read the essays →</a>
+      </div>
+      <aside class="hero-signup card">
+        <div class="hs-copy">
+          <h3>Get the Sunday email</h3>
+          <p>One short note on living and working with less. No noise, no hustle.</p>
+        </div>
+        <div class="hs-form">
+          <form onsubmit="return false">
+            <input class="input" type="email" placeholder="you@example.com" aria-label="Email" />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <small>Joined by 4,000+ quiet readers · unsubscribe anytime.</small>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ── The work · three surfaces ─────────────────────────────────────── -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <p class="eyebrow"><span class="num">01</span> &nbsp;What I make</p>
+          <h2>Three ways to make room.</h2>
+          <p class="sub">One idea — constraint as an advantage — told through a book, a practice, and a podcast.</p>
+        </div>
+      </div>
+      <div class="work-grid">
+        <a class="card work-card acc-clay" href="#book">
+          <span class="bar"></span>
+          <span class="k">The book</span>
+          <h3>Constraint Advantage</h3>
+          <p>Why limits make better work — and a better life. Out this autumn; pre-order open now.</p>
+          <span class="go">Pre-order →</span>
+        </a>
+        <a class="card work-card acc-teal" href="#work">
+          <span class="bar"></span>
+          <span class="k">The practice</span>
+          <h3>Uncluttah</h3>
+          <p>The actual decluttering — rooms, calendars, heads. One small change at a time.</p>
+          <span class="go">Start a room →</span>
+        </a>
+        <a class="card work-card acc-amber" href="#listen">
+          <span class="bar"></span>
+          <span class="k">The podcast</span>
+          <h3>The Lag</h3>
+          <p>Unhurried conversations about doing less, better. New episode every other week.</p>
+          <span class="go">Listen →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Book feature ──────────────────────────────────────────────────── -->
+  <section id="book">
+    <div class="wrap">
+      <div class="card feature acc-clay">
+        <div class="cover placeholder-img" role="img" aria-label="Constraint Advantage book cover — coming soon"><span>Cover · 3:4</span></div>
+        <div>
+          <p class="k">New book · Pre-order</p>
+          <h2>Constraint Advantage</h2>
+          <p class="blurb">A field guide to doing more with less on purpose. How the right limits sharpen attention, ease the noise, and quietly make everything you build better.</p>
+          <p class="endorse-line">“Calm, clear, and quietly convincing — it made me want less and feel more.”
+            <span>Reese Whitman · author of The Quiet Shelf</span>
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#book">Pre-order the book</a>
+            <a class="btn btn-ghost" href="#book">Read an excerpt →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Writing + Listen split ────────────────────────────────────────── -->
+  <section id="writing">
+    <div class="wrap split">
+      <div>
+        <div class="colhead">
+          <p class="eyebrow"><span class="num">02</span> &nbsp;Writing</p>
+          <h2>Recent essays</h2>
+        </div>
+        <div class="rows">
+          <a class="row-item" href="#writing">
+            <span class="row-meta">May 18<br />Essay</span>
+            <span class="row-main"><span class="row-title">The room you leave empty</span><span class="row-desc">Why the best shelf in the house is the one with nothing on it.</span></span>
+            <span class="row-arrow">→</span>
+          </a>
+          <a class="row-item" href="#writing">
+            <span class="row-meta">May 04<br />Essay</span>
+            <span class="row-main"><span class="row-title">Taking your time on purpose</span><span class="row-desc">Slowness is a skill worth practicing, not a setback to fix.</span></span>
+            <span class="row-arrow">→</span>
+          </a>
+          <a class="row-item" href="#writing">
+            <span class="row-meta">Apr 21<br />Essay</span>
+            <span class="row-main"><span class="row-title">Constraint is a kind of care</span><span class="row-desc">Limits aren't punishment. They're how you decide what matters.</span></span>
+            <span class="row-arrow">→</span>
+          </a>
+        </div>
+        <a class="more" href="#writing" style="display:inline-block;margin-top:24px">All essays →</a>
+      </div>
+
+      <div id="listen">
+        <div class="colhead">
+          <p class="eyebrow"><span class="num">03</span> &nbsp;Listen</p>
+          <h2>Latest from The Lag</h2>
+          <p class="colsub">Cohosted by Matthew &amp; Megan Leary-Crist, creator of <em>The Reframe</em>.</p>
+        </div>
+        <div class="card player acc-amber">
+          <div class="top">
+            <span class="cover"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+            <div class="info">
+              <div class="ep">The Lag · Ep. 14</div>
+              <div class="ti">Taking your time on purpose</div>
+            </div>
+            <button class="play" aria-label="Play"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></button>
+          </div>
+          <div class="scrub">
+            <span class="t">18:24</span>
+            <span class="track"><span class="fill"></span></span>
+            <span class="t">48:10</span>
+          </div>
+          <div class="ctrls">
+            <button aria-label="Back 15 seconds">⟲ 15s</button>
+            <button class="speed">1.0×</button>
+            <button aria-label="Forward 15 seconds">15s ⟳</button>
+          </div>
+        </div>
+        <a class="more" href="#listen" style="display:inline-block;margin-top:24px">All episodes →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About / bio ───────────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="wrap">
+      <div class="bio">
+        <div class="portrait">
+          <div class="placeholder-img portrait-ph" role="img" aria-label="Portrait of Matthew Crist — coming soon"><span>Portrait · 4:5</span></div>
+        </div>
+        <div>
+          <div class="bio-eyebrow">About</div>
+          <h2>Matthew Crist</h2>
+          <div class="bio-text">
+            <p>I write and talk about living with less — the constraint that turns out to be an advantage. I'm the author of <em>Constraint Advantage</em>, host the podcast <em>The Lag</em>, and run <em>Uncluttah</em>, a decluttering practice for rooms, calendars, and heads.</p>
+            <p>I believe clear is kind, and that the best thing you can add to most things is space.</p>
+          </div>
+          <div class="socials">
+            <a class="social-link" href="#subscribe"><span class="gl"></span> Newsletter</a>
+            <a class="social-link" href="#listen"><span class="gl"></span> The Lag</a>
+            <a class="social-link" href="#about"><span class="gl"></span> X</a>
+            <a class="social-link" href="#about"><span class="gl"></span> Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Subscribe (just above the footer) ─────────────────────────────── -->
+  <section id="subscribe">
+    <div class="wrap">
+      <div class="card subscribe">
+        <div>
+          <h3>A little more room, every Sunday.</h3>
+          <p>One short note on living and working with less. No noise, no hustle — unsubscribe anytime.</p>
+        </div>
+        <div>
+          <form onsubmit="return false">
+            <input class="input" type="email" placeholder="you@example.com" aria-label="Email" />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <small>Joined by 4,000+ quiet readers.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ──────────────────────────────────────────────────────────── -->
+<footer class="home-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div class="brandcol">
+        <a class="wordmark" href="#top">Matthew Crist</a>
+        <p>Making room for what matters — one fewer thing at a time.</p>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul>
+          <li><a href="#writing">Essays</a></li>
+          <li><a href="#book">The book</a></li>
+          <li><a href="#subscribe">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Listen &amp; do</h4>
+        <ul>
+          <li><a href="#listen">The Lag</a></li>
+          <li><a href="#work">Uncluttah</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="#about">X</a></li>
+          <li><a href="#about">Instagram</a></li>
+          <li><a href="#about">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="base">
+      <span>© 2026 Matthew Crist</span>
+      <span class="mono">Made with room to breathe</span>
+    </div>
+  </div>
+</footer>
+
+<script is:inline>
+  /* Light / dark toggle — persists the user's choice; follows the OS until they choose. */
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    function set(theme, save) {
+      root.classList.add('theme-swapping');
+      root.setAttribute('data-theme', theme);
+      void root.offsetWidth; /* force reflow so colors repaint without transition */
+      requestAnimationFrame(function () { root.classList.remove('theme-swapping'); });
+      if (save) { try { localStorage.setItem('mc-theme', theme); } catch (e) {} }
+      if (btn) btn.setAttribute('aria-pressed', theme === 'dark');
+    }
+    if (btn) btn.addEventListener('click', function () {
+      set(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark', true);
+    });
+    /* If the user hasn't chosen, keep following the OS live. */
+    if (mq) mq.addEventListener('change', function (e) {
+      try { if (localStorage.getItem('mc-theme')) return; } catch (err) {}
+      set(e.matches ? 'dark' : 'light', false);
+    });
+  })();
+</script>
+</body>
+</html>
