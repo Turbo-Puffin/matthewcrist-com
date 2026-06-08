@@ -122,3 +122,7 @@
 
 /* Real book cover is 2:3 — let it show at natural ratio (overrides the placeholder's 3:4). */
 .feature img.cover { aspect-ratio: 2 / 3; height: auto; object-fit: cover; }
+
+/* — Signup success / error states — */
+.subscribe-done { color: var(--accent); font-family: var(--font-head); font-weight: 600; font-size: 15px; margin: 0; }
+.subscribe-error { color: var(--ink-2); font-size: 13px; margin: 8px 0 0; }

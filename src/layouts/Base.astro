@@ -145,5 +145,47 @@ const {
     });
   })();
 </script>
+
+<script is:inline>
+  /* Newsletter signup → Bunny edge script → Kit. Audience is tagged server-side by Origin. */
+  (function () {
+    var ENDPOINT = 'https://subscribe.matthewcrist.com/';
+    function setMsg(form, msg) {
+      var el = form.querySelector('.subscribe-error');
+      if (!el) { el = document.createElement('p'); el.className = 'subscribe-error'; form.appendChild(el); }
+      el.textContent = msg;
+    }
+    document.querySelectorAll('form[data-subscribe]').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var input = form.querySelector('input[type=email]');
+        var btn = form.querySelector('button[type=submit]') || form.querySelector('button');
+        var email = ((input && input.value) || '').trim();
+        if (!email) { if (input) input.focus(); return; }
+        var original = btn ? btn.textContent : '';
+        if (btn) { btn.disabled = true; btn.textContent = 'Joining…'; }
+        fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email })
+        }).then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            return { ok: res.ok && data && data.ok, error: data && data.error };
+          });
+        }).then(function (r) {
+          if (r.ok) {
+            form.innerHTML = '<p class="subscribe-done">You\'re on the list. Talk soon.</p>';
+          } else {
+            if (btn) { btn.disabled = false; btn.textContent = original; }
+            setMsg(form, r.error || 'Something went wrong. Please try again.');
+          }
+        }).catch(function () {
+          if (btn) { btn.disabled = false; btn.textContent = original; }
+          setMsg(form, 'Network hiccup. Please try again.');
+        });
+      });
+    });
+  })();
+</script>
 </body>
 </html>
