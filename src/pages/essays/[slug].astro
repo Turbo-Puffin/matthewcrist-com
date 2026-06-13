@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import '../../styles/essays.css';
 
 export async function getStaticPaths() {
@@ -26,11 +27,7 @@ const fmt = (d: Date) =>
 <Base title={`${entry.data.title} — Matthew Crist`} description={entry.data.description}>
 <main>
   <article class="essay-article">
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a><span class="sep">/</span>
-      <a href="/essays">Essays</a><span class="sep">/</span>
-      <span class="here">{entry.data.title}</span>
-    </nav>
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Essays', href: '/essays' }, { label: entry.data.title }]} />
 
     <header class="essay-head">
       <div class="meta">

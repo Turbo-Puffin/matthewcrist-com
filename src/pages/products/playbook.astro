@@ -1,5 +1,6 @@
 ---
-import Base from '../layouts/Base.astro';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 const BUY_URL = 'https://matthew-crist.kit.com/products/the-purge-playbook?step=checkout';
 ---
 <Base
@@ -9,6 +10,8 @@ const BUY_URL = 'https://matthew-crist.kit.com/products/the-purge-playbook?step=
   bodyClass="pb-page"
 >
   <main class="wrap pb">
+
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }, { label: 'The Purge Playbook' }]} />
 
     <!-- Hero -->
     <section class="pb-hero">

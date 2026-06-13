@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
 <Base
   title="Products — Matthew Crist"
@@ -7,6 +8,8 @@ import Base from '../layouts/Base.astro';
   bodyClass="products-page"
 >
   <main class="wrap prod">
+
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Products' }]} />
 
     <header class="prod-head">
       <p class="eyebrow">Products</p>
@@ -25,7 +28,7 @@ import Base from '../layouts/Base.astro';
           <p class="prod-kicker">Field guide · $9</p>
           <h2>The Purge Playbook</h2>
           <p>The room-by-room system for getting the stuff out of your house and your attention back. Four printable guides: the rules, the checklists, the cold-case worksheet, and the AI-assisted way to sell the pile fast.</p>
-          <a class="btn btn-primary" href="/playbook">See the playbook</a>
+          <a class="btn btn-primary" href="/products/playbook">See the playbook</a>
         </div>
       </article>
 
