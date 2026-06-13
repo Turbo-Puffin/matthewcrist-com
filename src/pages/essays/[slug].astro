@@ -27,6 +27,15 @@ const fmt = (d: Date) =>
 <Base title={`${entry.data.title} — Matthew Crist`} description={entry.data.description}>
 <main>
   <article class="essay-article">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": entry.data.title,
+      "description": entry.data.description,
+      "datePublished": entry.data.date.toISOString(),
+      "author": { "@type": "Person", "name": "Matthew Crist", "url": "https://matthewcrist.com" },
+      "mainEntityOfPage": `https://matthewcrist.com/essays/${entry.slug}`
+    })} is:inline />
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Essays', href: '/essays' }, { label: entry.data.title }]} />
 
     <header class="essay-head">

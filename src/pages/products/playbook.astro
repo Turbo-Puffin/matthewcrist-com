@@ -2,6 +2,22 @@
 import Base from '../../layouts/Base.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 const BUY_URL = 'https://matthew-crist.kit.com/products/the-purge-playbook?step=checkout';
+const productLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'The Purge Playbook',
+  description: 'The room-by-room system for getting the stuff out of your house and your attention back. Four printable guides: the rules, the room checklists, the cold-case worksheet, and guides to selling the excess on eBay manually or with AI assistance.',
+  image: 'https://matthewcrist.com/images/purge-playbook.png',
+  url: 'https://matthewcrist.com/products/playbook',
+  brand: { '@type': 'Person', name: 'Matthew Crist' },
+  offers: {
+    '@type': 'Offer',
+    price: '9.00',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    url: BUY_URL,
+  },
+};
 ---
 <Base
   title="The Purge Playbook — Matthew Crist"
@@ -9,6 +25,7 @@ const BUY_URL = 'https://matthew-crist.kit.com/products/the-purge-playbook?step=
   ogImage="/images/purge-playbook.png"
   bodyClass="pb-page"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(productLd)} is:inline />
   <main class="wrap pb">
 
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }, { label: 'The Purge Playbook' }]} />

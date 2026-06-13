@@ -1,12 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+const listLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Products by Matthew Crist',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'The Purge Playbook', url: 'https://matthewcrist.com/products/playbook' },
+    { '@type': 'ListItem', position: 2, name: 'The Constraint Advantage', url: 'https://constraintadvantage.com' },
+  ],
+};
 ---
 <Base
   title="Products — Matthew Crist"
   description="Field guides and books for simplifying your life: practical systems for the house, the calendar, and the head. Built from lived practice, not theory."
   bodyClass="products-page"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(listLd)} is:inline />
   <main class="wrap prod">
 
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Products' }]} />

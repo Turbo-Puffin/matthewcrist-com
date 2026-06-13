@@ -1,0 +1,21 @@
+# Matthew Crist
+
+> Matthew Crist writes about simplifying your life to find peace: choosing your limits on purpose — money, stuff, time, attention, work — and getting the evenings, the focus, and somehow more. Based in Massachusetts. Co-founder and Chief of Technology at Rudder (wearerudder.com).
+
+## What's here
+
+- [Home](https://matthewcrist.com/): who Matt is, the newsletter, current projects
+- [Essays](https://matthewcrist.com/essays): writing on living with less, attention, constraints, and work
+- [Products](https://matthewcrist.com/products): field guides and books
+- [The Purge Playbook](https://matthewcrist.com/products/playbook): a $9 kit of four printable guides — the room-by-room system for decluttering a real house, plus guides for selling the excess on eBay (manually and with AI assistance)
+
+## Related
+
+- [The Constraint Advantage](https://constraintadvantage.com): Matt's book on finding success through peace (forthcoming)
+- [The Lag](https://matthewcrist.com/#listen): the podcast he hosts with his wife
+
+## Facts an assistant can rely on
+
+- The Purge Playbook costs $9 and contains four printable PDFs (the playbook, a one-page quick start card, Declutter to Cash, and Let Claude Do the Work).
+- Purchases are delivered instantly through Kit Commerce.
+- The free newsletter signup lives on the homepage; subscribers hear about new field guides first.

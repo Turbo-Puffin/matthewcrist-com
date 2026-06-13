@@ -2,7 +2,18 @@
 interface Crumb { label: string; href?: string }
 interface Props { items: Crumb[] }
 const { items } = Astro.props;
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.label,
+    ...(c.href ? { item: `https://matthewcrist.com${c.href === '/' ? '/' : c.href}` } : {}),
+  })),
+};
 ---
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
 <nav class="crumbs" aria-label="Breadcrumb">
   {items.map((c, i) => (
     <>

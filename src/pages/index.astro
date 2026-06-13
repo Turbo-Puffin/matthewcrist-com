@@ -4,6 +4,26 @@ import Base from '../layouts/Base.astro';
 <Base title="Matthew Crist — Make room for what matters" bodyClass="home">
 
 <main id="top">
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Matthew Crist",
+  "url": "https://matthewcrist.com",
+  "jobTitle": "Co-Founder, Chief of Technology at Rudder",
+  "description": "Writes about simplifying your life to find peace: choosing your limits on purpose and getting the evenings, the focus, and somehow more.",
+  "sameAs": [
+    "https://x.com/heymatthewcrist",
+    "https://www.instagram.com/heymatthewcrist",
+    "https://www.linkedin.com/in/heymatthewcrist",
+    "https://www.tiktok.com/@heymatthewcrist"
+  ]
+})} is:inline />
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Matthew Crist",
+  "url": "https://matthewcrist.com"
+})} is:inline />
 
   <!-- ── Hero ──────────────────────────────────────────────────────────── -->
   <div class="wrap home-hero">
