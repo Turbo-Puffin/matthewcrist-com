@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Products — Matthew Crist"
+  description="Field guides and books for simplifying your life: practical systems for the house, the calendar, and the head. Built from lived practice, not theory."
+  bodyClass="products-page"
+>
+  <main class="wrap prod">
+
+    <header class="prod-head">
+      <p class="eyebrow">Products</p>
+      <h1>Tools for living with less</h1>
+      <p class="lead">Field guides and books built from lived practice, not theory. Each one does a single job: help you put something down and get the time back.</p>
+    </header>
+
+    <div class="prod-list">
+
+      <!-- Purge Playbook -->
+      <article class="card prod-card acc-amber">
+        <div class="prod-card-img">
+          <img src="/images/purge-playbook.png" alt="The Purge Playbook kit: four printed guides fanned out" width="640" height="480" loading="eager" />
+        </div>
+        <div class="prod-card-body">
+          <p class="prod-kicker">Field guide · $9</p>
+          <h2>The Purge Playbook</h2>
+          <p>The room-by-room system for getting the stuff out of your house and your attention back. Four printable guides: the rules, the checklists, the cold-case worksheet, and the AI-assisted way to sell the pile fast.</p>
+          <a class="btn btn-primary" href="/playbook">See the playbook</a>
+        </div>
+      </article>
+
+      <!-- The Constraint Advantage -->
+      <article class="card prod-card acc-clay">
+        <div class="prod-card-img prod-card-cover">
+          <img src="/cover.png" alt="The Constraint Advantage book cover" width="400" height="600" loading="lazy" />
+        </div>
+        <div class="prod-card-body">
+          <p class="prod-kicker">Book · coming soon</p>
+          <h2>The Constraint Advantage</h2>
+          <p>Finding success through peace: why choosing your limits, on purpose, is how you get the evenings, the focus, and somehow more. The philosophy underneath everything else on this page.</p>
+          <a class="btn btn-primary" href="https://constraintadvantage.com">About the book</a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="prod-more">More field guides are coming: the budget evening, the calendar audit. The <a href="/#subscribe">newsletter</a> hears about each one first.</p>
+
+  </main>
+
+  <style>
+    .prod { padding-block: 2.5rem 4rem; }
+    .prod-head { max-width: 44rem; margin-bottom: 2.5rem; }
+    .prod-head h1 { font-size: clamp(2rem, 4.5vw, 3rem); margin: 0.2em 0 0.4em; }
+
+    .prod-list { display: grid; gap: 1.5rem; }
+    .prod-card { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1.75rem; padding: 1.75rem; align-items: center; }
+    .prod-card-img img { width: 100%; height: auto; border-radius: 10px; }
+    .prod-card-cover { display: flex; justify-content: center; }
+    .prod-card-cover img { max-width: 220px; box-shadow: 0 12px 32px color-mix(in oklch, var(--ink) 22%, transparent); }
+    .prod-kicker { font-family: var(--font-mono, monospace); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-deep); margin: 0 0 0.25rem; }
+    .prod-card h2 { margin: 0 0 0.5rem; }
+    .prod-card-body p { line-height: 1.55; }
+    .prod-card .btn { margin-top: 0.75rem; }
+
+    .prod-more { margin-top: 2.5rem; color: var(--ink-60, #777); max-width: 44rem; }
+
+    @media (max-width: 720px) {
+      .prod-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</Base>
