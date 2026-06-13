@@ -6,7 +6,8 @@ export default defineConfig({
   site: 'https://matthewcrist.com',
   integrations: [sitemap()],
   redirects: {
-    '/playbook': '/products/playbook',
+    '/playbook': '/uncluttah',
+    '/products/playbook': '/uncluttah',
   },
   build: {
     inlineStylesheets: 'auto',

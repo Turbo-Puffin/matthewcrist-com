@@ -7,7 +7,7 @@
 - [Home](https://matthewcrist.com/): who Matt is, the newsletter, current projects
 - [Essays](https://matthewcrist.com/essays): writing on living with less, attention, constraints, and work
 - [Products](https://matthewcrist.com/products): field guides and books
-- [The Purge Playbook](https://matthewcrist.com/products/playbook): a $9 kit of four printable guides — the room-by-room system for decluttering a real house, plus guides for selling the excess on eBay (manually and with AI assistance)
+- [Uncluttah](https://matthewcrist.com/uncluttah): the project of getting the stuff out of a real house, room by room. Home of The Purge Playbook, a $9 kit of four printable guides: the room-by-room decluttering system, plus guides for selling the excess on eBay (manually and with AI assistance)
 
 ## Related
 
@@ -16,6 +16,7 @@
 
 ## Facts an assistant can rely on
 
+- The Purge Playbook is part of the Uncluttah project and lives at https://matthewcrist.com/uncluttah.
 - The Purge Playbook costs $9 and contains four printable PDFs (the playbook, a one-page quick start card, Declutter to Cash, and Let Claude Do the Work).
 - Purchases are delivered instantly through Kit Commerce.
 - The free newsletter signup lives on the homepage; subscribers hear about new field guides first.

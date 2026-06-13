@@ -1,14 +1,14 @@
 ---
-import Base from '../../layouts/Base.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 const BUY_URL = 'https://matthew-crist.kit.com/products/the-purge-playbook?step=checkout';
 const productLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: 'The Purge Playbook',
-  description: 'The room-by-room system for getting the stuff out of your house and your attention back. Four printable guides: the rules, the room checklists, the cold-case worksheet, and guides to selling the excess on eBay manually or with AI assistance.',
+  description: 'The room-by-room system for getting the stuff out of your house and your attention back. Four printable guides: the rules, the room checklists, the cold-case worksheet, and guides to selling the excess on eBay manually or with AI assistance. Part of the Uncluttah project.',
   image: 'https://matthewcrist.com/images/purge-playbook.png',
-  url: 'https://matthewcrist.com/products/playbook',
+  url: 'https://matthewcrist.com/uncluttah',
   brand: { '@type': 'Person', name: 'Matthew Crist' },
   offers: {
     '@type': 'Offer',
@@ -20,30 +20,37 @@ const productLd = {
 };
 ---
 <Base
-  title="The Purge Playbook — Matthew Crist"
-  description="The room-by-room system for getting the stuff out of your house and your attention back. Four printable guides, $9. No aesthetic required."
+  title="Uncluttah: The Purge Playbook | Matthew Crist"
+  description="Uncluttah is the project of getting the stuff out of a real house, room by room. The Purge Playbook is that system: four printable guides, $9. No aesthetic required."
   ogImage="/images/purge-playbook.png"
   bodyClass="pb-page"
 >
   <script type="application/ld+json" set:html={JSON.stringify(productLd)} is:inline />
   <main class="wrap pb">
 
-    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }, { label: 'The Purge Playbook' }]} />
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Uncluttah' }]} />
 
     <!-- Hero -->
     <section class="pb-hero">
       <div class="pb-hero-copy">
-        <p class="eyebrow">A field guide, not a philosophy</p>
-        <h1>The Purge Playbook</h1>
-        <p class="lead">The room-by-room system for getting the stuff out of your house, the claims off your attention, and your evenings back. No aesthetic required.</p>
+        <p class="eyebrow">The Uncluttah project</p>
+        <h1>Uncluttah</h1>
+        <p class="lead">Boston for "unclutter." The ongoing project of getting the stuff out of a real house, on purpose, room by room, and writing down what actually works. The Purge Playbook is that system, in your hands.</p>
         <div class="pb-cta-row">
-          <a class="btn btn-primary pb-buy" href={BUY_URL}>Empty the house, $9</a>
+          <a class="btn btn-primary pb-buy" href={BUY_URL}>Get the Purge Playbook, $9</a>
           <span class="pb-cta-sub">Four printable guides · instant download</span>
         </div>
       </div>
       <div class="pb-hero-img">
         <img src="/images/purge-playbook.png" alt="The Purge Playbook: four printed guides fanned out, with the playbook cover in front" width="800" height="600" loading="eager" />
       </div>
+    </section>
+
+    <!-- What Uncluttah is -->
+    <section class="pb-pitch">
+      <h2>What Uncluttah is</h2>
+      <p>A house doesn't get cluttered on purpose, and it will not get clear on purpose either, not without a system. Uncluttah is the work of clearing one anyway: one room a month, honest notes on what works and what's nonsense, no patience for the parts that don't.</p>
+      <p>It is not minimalism. Nobody here counts their possessions or photographs an empty shelf. It's a real house with real stuff and a method for handing the space back to the people who live in it. The playbook below is everything that method turned out to be.</p>
     </section>
 
     <!-- The pitch -->
