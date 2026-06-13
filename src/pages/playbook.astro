@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+const BUY_URL = 'https://matthew-crist.kit.com/products/the-purge-playbook';
+---
+<Base
+  title="The Purge Playbook — Matthew Crist"
+  description="The room-by-room system for getting the stuff out of your house and your attention back. Four printable guides, $9. No aesthetic required."
+  ogImage="/images/purge-playbook.png"
+  bodyClass="pb-page"
+>
+  <main class="wrap pb">
+
+    <!-- Hero -->
+    <section class="pb-hero">
+      <div class="pb-hero-copy">
+        <p class="eyebrow">A field guide, not a philosophy</p>
+        <h1>The Purge Playbook</h1>
+        <p class="lead">The room-by-room system for getting the stuff out of your house, the claims off your attention, and your evenings back. No aesthetic required.</p>
+        <div class="pb-cta-row">
+          <a class="btn btn-primary pb-buy" href={BUY_URL}>Empty the house, $9</a>
+          <span class="pb-cta-sub">Four printable guides · instant download</span>
+        </div>
+      </div>
+      <div class="pb-hero-img">
+        <img src="/images/purge-playbook.png" alt="The Purge Playbook: four printed guides fanned out, with the playbook cover in front" width="800" height="600" loading="eager" />
+      </div>
+    </section>
+
+    <!-- The pitch -->
+    <section class="pb-pitch">
+      <h2>Your house is billing you</h2>
+      <p>Every object you own makes a small claim on you: deal with me, maintain me, store me, feel a little guilt when you walk past me. One claim is nothing. The average household holds about three hundred thousand of them. That's not a storage problem. That's an attention problem wearing a storage costume, and you can't buy your way out of it with bins.</p>
+      <p>My wife and I have been purging our own house, room by room, for months. This is the system that survived contact with real closets, real sentiment, and real arguments. It is not minimalism. Nobody counts their possessions. Nobody photographs an empty shelf. It's a field guide for one thing: <strong>a house that holds your people instead of your inventory.</strong></p>
+    </section>
+
+    <!-- What's inside -->
+    <section class="pb-inside">
+      <h2>What's in the kit</h2>
+      <div class="pb-grid">
+        <div class="card pb-card acc-amber">
+          <p class="pb-card-kicker">The main event</p>
+          <h3>The Purge Playbook</h3>
+          <p>The seven rules, the 20-minute one-drawer starter, the four piles, room-by-room checklists from your closet to the garage boss level, and the cold-case worksheet for the stuff you've been avoiding deciding about.</p>
+        </div>
+        <div class="card pb-card acc-sage">
+          <p class="pb-card-kicker">For the fridge</p>
+          <h3>The quick start card</h3>
+          <p>The whole system on one page. Pin it up, hand it to a skeptical spouse, start tonight.</p>
+        </div>
+        <div class="card pb-card acc-teal">
+          <p class="pb-card-kicker">The money part</p>
+          <h3>Declutter to Cash</h3>
+          <p>The beginner's guide to selling the pile on eBay: real prices, clean photos, honest listings, and the 30-day rule that keeps the sell pile from becoming furniture.</p>
+        </div>
+        <div class="card pb-card acc-clay">
+          <p class="pb-card-kicker">The lazy way</p>
+          <h3>Let Claude Do the Work</h3>
+          <p>The AI upgrade: an assistant identifies each item, writes the listing, and prices it. Twenty minutes per item becomes three. You take the photos; the machine does the thinking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules preview -->
+    <section class="pb-rules">
+      <h2>Three of the seven rules</h2>
+      <ol>
+        <li><strong>"Perfectly good" is not the bar.</strong> Almost everything you own is perfectly good. The bar is whether current-you uses it or loves it.</li>
+        <li><strong>If it's been boxed since the last move, the box doesn't get a vote.</strong> You've already lived without everything in it.</li>
+        <li><strong>You're not deciding about the object. You're closing a case.</strong> The golf clubs are a referendum on whether you're still the guy who was going to golf. The basement is not a cold-case department.</li>
+      </ol>
+      <p class="pb-rules-more">The other four are in the playbook, along with the checklists that make them automatic.</p>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="pb-final">
+      <h2>One drawer tonight. One room a month.</h2>
+      <p>A year from now the whole house is quiet. It starts with the junk drawer that fights back when you open it.</p>
+      <a class="btn btn-primary pb-buy" href={BUY_URL}>Get the Purge Playbook, $9</a>
+      <p class="pb-trust">Instant download · print at home · costs less than the bin you were about to buy to avoid the problem</p>
+    </section>
+
+  </main>
+
+  <style>
+    .pb { padding-block: 2.5rem 4rem; }
+    .pb h2 { margin: 0 0 0.75rem; }
+    .pb section + section { margin-top: 3.5rem; }
+
+    .pb-hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem; align-items: center; }
+    .pb-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.05; margin: 0.2em 0 0.4em; }
+    .pb-hero-img img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 18px 50px color-mix(in oklch, var(--ink) 18%, transparent); }
+    .pb-cta-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem; }
+    .pb-buy { font-size: 1.05rem; padding: 0.85em 1.6em; }
+    .pb-cta-sub { color: var(--ink-60, #777); font-size: 0.95rem; }
+
+    .pb-pitch { max-width: 44rem; }
+    .pb-pitch p { font-size: 1.08rem; line-height: 1.6; }
+
+    .pb-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 1.25rem; }
+    .pb-card { padding: 1.5rem; }
+    .pb-card h3 { margin: 0.15em 0 0.4em; }
+    .pb-card p { line-height: 1.55; margin: 0; }
+    .pb-card-kicker { font-family: var(--font-mono, monospace); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-deep); margin: 0; }
+
+    .pb-rules { max-width: 44rem; }
+    .pb-rules ol { padding-left: 1.2rem; }
+    .pb-rules li { margin-bottom: 0.9rem; line-height: 1.55; }
+    .pb-rules-more { color: var(--ink-60, #777); }
+
+    .pb-final { text-align: center; padding: 3rem 1.5rem; background: var(--accent-tint); border-radius: 16px; }
+    .pb-final p { max-width: 36rem; margin: 0.25rem auto 1.25rem; }
+    .pb-trust { font-size: 0.9rem; color: var(--ink-60, #777); margin-top: 1rem !important; }
+
+    @media (max-width: 760px) {
+      .pb-hero { grid-template-columns: 1fr; }
+      .pb-hero-img { order: -1; }
+      .pb-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</Base>
