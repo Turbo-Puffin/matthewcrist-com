@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 
 const { entry, newer, older } = Astro.props;
 const { Content } = await entry.render();
-const ogImage = `https://rudder-og.b-cdn.net/og.png?title=${encodeURIComponent(entry.data.title)}&kicker=${encodeURIComponent(entry.data.topic || 'Essay')}&theme=mc`;
+const ogImage = entry.data.ogImage ?? `https://rudder-og.b-cdn.net/og.png?title=${encodeURIComponent(entry.data.title)}&kicker=${encodeURIComponent(entry.data.topic || 'Essay')}&theme=mc`;
 const fmt = (d: Date) =>
   d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 ---

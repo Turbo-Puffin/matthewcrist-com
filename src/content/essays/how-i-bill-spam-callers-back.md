@@ -3,9 +3,13 @@ title: "How I bill spam callers back"
 description: "The marketing calls are illegal. I built a three second process, and an agent named Louie, to collect."
 date: 2026-06-16
 topic: "Leverage"
+ogImage: "https://matthewcrist.com/images/louie-redacted.png"
 ---
 
-![An illustrated lawyer in a pinstripe suit with a cigar, face redacted.](/images/louie-redacted.png)
+<figure class="essay-figure">
+  <img src="/images/louie-redacted.png" alt="An illustrated lawyer in a pinstripe suit with a cigar, face redacted." />
+  <figcaption>Counsel has advised Louie not to show his face. Counsel is also Louie.</figcaption>
+</figure>
 
 The phone calls never stop. Endless marketing calls trying to sell you some scammy financial product. Well, I've taken matters into my own hands and built a 3-second process to get even. We've collected $1,500 in settlements so far, with more on the way.
 

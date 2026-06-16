@@ -7,6 +7,7 @@ const essays = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     topic: z.string(),
+    ogImage: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
