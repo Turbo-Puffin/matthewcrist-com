@@ -11,7 +11,7 @@ ogImage: "https://matthewcrist.com/images/louie-redacted.png"
   <figcaption>Counsel has advised Louie not to show his face. Counsel is also Louie.</figcaption>
 </figure>
 
-The phone calls never stop. Endless marketing calls trying to sell you some scammy financial product. Well, I've taken matters into my own hands and built a 3-second process to get even. We've collected $1,500 in settlements so far, with more on the way.
+The phone calls never stop. Endless marketing calls trying to sell you some scammy financial product. Well, I've taken matters into my own hands and built a 3-second process to get even. We've already collected four figures in settlements, with more on the way.
 
 ## The why
 
@@ -67,11 +67,9 @@ I approve everything before it goes out. Louie drafts, I hit send. But by the ti
 
 ## The results
 
-$1,500 so far, with more offers on the table.
+Four figures so far, with more offers on the table.
 
-![A settlement summary: $1,500 recovered for three unlawful telemarketing calls, $500 per call, full demand met, no lawsuit filed.](/images/tcpa-settlement.webp)
-
-One company's law firm wrote back in under three weeks and offered the full amount ($500 a call, three calls) just to make it disappear. Cheaper for them to pay than to fight. That's the whole game.
+One company's law firm wrote back in under three weeks and offered the full statutory amount per call just to make it disappear. Cheaper for them to pay than to fight. That's the whole game.
 
 ## A few honest things
 
