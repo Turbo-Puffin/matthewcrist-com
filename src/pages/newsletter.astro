@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+<Base
+  title="The Sunday email — Matthew Crist"
+  description="One short note every Sunday on living and working with less, and the peace hiding inside the constraint. Free, no noise, unsubscribe anytime."
+  bodyClass="newsletter-page"
+>
+  <main class="wrap nl">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'The Sunday email' }]} />
+
+    <header class="nl-head">
+      <p class="eyebrow">Newsletter</p>
+      <h1>The Sunday email</h1>
+      <p class="lead">One short note every Sunday on living and working with less, and the bit of peace that turns out to be hiding inside the constraint. No noise, no hustle, no ten-step systems. Just a few honest words and one idea worth keeping.</p>
+    </header>
+
+    <div class="card subscribe nl-form">
+      <div>
+        <h3>A little more room, every Sunday.</h3>
+        <p>Free to join. Unsubscribe anytime, no hard feelings.</p>
+      </div>
+      <div>
+        <form data-subscribe>
+          <input class="input" type="email" placeholder="you@example.com" aria-label="Email" />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="nl-about">
+      <h2>What to expect</h2>
+      <ul>
+        <li>One email, Sunday morning. That is the whole commitment.</li>
+        <li>Short by design. A single idea about simplifying, not a newsletter you have to set time aside for.</li>
+        <li>The same voice as the essays, written for people trying to do less and feel better for it.</li>
+      </ul>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .nl { padding-block: clamp(40px, 7vw, 72px) var(--s-9); }
+  .nl-head { margin-bottom: var(--s-6); max-width: 60ch; }
+  .nl-head .eyebrow { margin-bottom: var(--s-4); }
+  .nl-head h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.06; }
+  .nl-head .lead { margin-top: var(--s-4); max-width: 54ch; }
+  .nl-form { margin-bottom: var(--s-7); }
+  .nl-about h2 { font-family: var(--font-head); font-weight: 600; font-size: 22px; letter-spacing: -0.02em; margin: 0 0 var(--s-4); }
+  .nl-about ul { margin: 0; padding-left: 1.2em; max-width: 54ch; }
+  .nl-about li { margin-bottom: 0.6em; line-height: 1.5; }
+</style>
